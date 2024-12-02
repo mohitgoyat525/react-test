@@ -10,7 +10,7 @@ function Footer() {
             <div className='flex max-w-[1140px] mx-auto flex-wrap max-lg:gap-10'>
                 <div className='w-1/2 max-lg:w-full'>
                     <p className=  {`${location === "/"
-                        ? "text-[38px] text-[#FF5501] font-bold  max-xl:text-center"
+                        ? "text-[38px] text-[#FF5501] font-bold  max-xl:text-center rounded-t-[30px]"
                         : "text-[38px] text-[#007AFF] font-bold max-xl:text-center"
                         }`}>Logo <span className='text-white'>Here</span></p>
                     <p className='max-lg:text-center max-md:mx-auto max-w-[431px] opacity-70 mt-4 text-white'>Lorem ipsum dolor sit amet consectetur. Metus mattis cum sem integer est. Amet fringilla tristique hendrerit vestibulum diam est penatibus interdum imperdiet. Duis ut libero suspendisse arcu erat. Pulvinar in est.</p>

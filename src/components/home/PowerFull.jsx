@@ -24,62 +24,19 @@ const PowerFull = () => {
           <p className="font-normal text-base text-[#191D23]">Pay Yearly</p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-6 mt-12 max-xl:mt-7 max-md:mt-4 flex-wrap pb-24 max-md:pb-10 max-sm:pb-5">
+      <div className="flex items-start justify-center gap-6 mt-12 max-xl:mt-7 max-md:mt-4 flex-wrap pb-24 max-md:pb-10 max-sm:pb-5">
         {PAY_CARD_DATA.map((data, i) => (
           <div key={i} className="">
             <CommonPayCardHeading CommonPayCardHeadingText={data.heading} />
             <CommonPayParaText CommonPayParaContent={data.para} />
             <CommonAmount PayAmount={data.amountText} MonthText={data.month} />
             <CommonPaybtn PayCardBtn={data.btn} />
-            <p className="flex items-center gap-2">
-              <CheckBox />
-              <CommonPayFeature CommonPayFeature={data.paratextone} />
-            </p>
-            <p className="flex items-center gap-2">
-              <CheckBox />
-              <CommonPayFeature CommonPayFeature={data.paratexttwo} />
-            </p>
-            {data.PayContent.map((obj, idx) => (
-              <div key={idx}>
-                {obj.paratextthree && (
-                  <p className="flex items-center pt-3 gap-2">
-                    <CancelBox />
-                    <CommonPayFeature CommonPayFeature={obj.paratextthree} />
-                  </p>
-                )}
-                {obj.paratextfour && (
-                  <p className="flex items-center pt-3 gap-2">
-                    <CheckBox />
-                    <CommonPayFeature CommonPayFeature={obj.paratextfour} />
-                  </p>
-                )}
-                {obj.paratextfive && (
-                  <p className="flex items-center pt-3 gap-2">
-                    <CheckBox />
-                    <CommonPayFeature CommonPayFeature={obj.paratextfive} />
-                  </p>
-                )}
-                {obj.paratextsix && (
-                  <p className='flex items-center pt-3 gap-2'>
-                    <CheckBox />
-                    <CommonPayFeature CommonPayFeature={obj.paratextsix} />
-                  </p>
-                )}   
-                {obj.paratextseven && (
-                  <p className='flex items-center pt-3 gap-2'>
-                    <CheckBox />
-                    <CommonPayFeature CommonPayFeature={obj.paratextseven} />
-                  </p>
-                )}
-                {obj.paratexteight && (
-                  <p className='flex items-center pt-3 gap-2'>
-                    <CheckBox />
-                    <CommonPayFeature CommonPayFeature={obj.paratexteight} />
-                  </p>
-                )}
-                
+            {data.payContent.map((obj, idx) => (
+              <div className='flex gap-3 mb-3' key={idx}>
+                {obj.icon}
+                {obj.para}
               </div>
-            ))}
+            ))} 
           </div>
         ))}
       </div>
