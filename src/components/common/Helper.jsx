@@ -93,7 +93,6 @@ export const PAY_CARD_DATA = [
   }
 ]
 
-
 export const TODAY_DATA = [
   {
     id: 1,

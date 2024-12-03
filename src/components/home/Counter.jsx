@@ -15,7 +15,7 @@ const Counter = () => {
         <>
             <div className='flex items-center justify-center gap-[166px] max-2xl:gap-[140px] max-xl:gap-[100px] max-lg:gap-12 max-md:gap-8 max-sm:gap-3 max-lg:flex-col my-[78px] max-xl:my-20px max-lg:my-10 max-md:my-5'>
              <div>
-          <div className='flex gap-[97px] items-center justify-center bg-[#1EABF8] border-[5px] border-black max-w-[402px] py-9 px-[60px] rounded-[50px] max-sm:max-w-full'>
+          <div className='flex gap-[97px] items-center justify-center bg-[#1EABF8] border-[5px] border-black max-w-[402px] max-sm:max-w-[350px] py-9 px-[60px] rounded-[50px]'>
               <button className='text-6xl' onClick={removeValue}>-</button>
               <p className='text-6xl'>{value}</p>
               <button className='text-6xl' onClick={addValue}>+</button>
