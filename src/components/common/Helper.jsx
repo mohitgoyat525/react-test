@@ -92,3 +92,17 @@ export const PAY_CARD_DATA = [
     ]
   }
 ]
+
+
+export const TODAY_DATA = [
+  {
+    id: 1,
+    name: 'Today Task',
+    complete: false,
+  },
+  {
+    id: 2,
+    name: 'Day end progress',
+    completet: true,
+  }
+]
