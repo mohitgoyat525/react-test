@@ -8,8 +8,9 @@ const TaskWork = () => {
         },1000)
     })
   return (
-            <div>
-                <p className="text-blue-600 font-semibold text-4xl ">{count}</p>
+      <div>
+          <h1 className="text-center font-bold text-5xl text-blue-600 py-7">UseEffect</h1>
+                <p className="text-center py-5 text-blue-600 font-semibold text-4xl ">{count}</p>
             </div>
   )
 }
