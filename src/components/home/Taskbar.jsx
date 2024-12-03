@@ -67,7 +67,7 @@ const Taskbar = () => {
                                 </li>
                             ))
                         ) : (
-                            <p>No tasks available</p>
+                            <p className='text-2xl font-medium text-blue-600'>No tasks available</p>
                         )}
                     </ul>
                 </div>
