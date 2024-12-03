@@ -1,12 +1,11 @@
 import React from 'react';
 import CommonSecHeading from '../common/CommonSecHeading';
-import { BtnIcon, CancelBox, CheckBox } from '../common/Icon';
+import { BtnIcon } from '../common/Icon';
 import CommonPayCardHeading from '../common/CommonPayCardHeading';
 import { PAY_CARD_DATA } from '../common/Helper';
 import CommonPayParaText from '../common/CommonPayParaText';
 import CommonAmount from '../common/CommonAmount';
 import CommonPaybtn from '../common/CommonPaybtn';
-import CommonPayFeature from '../common/CommonPayFeature';
 
 const PowerFull = () => {
   return (

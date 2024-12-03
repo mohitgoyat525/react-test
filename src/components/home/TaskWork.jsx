@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 const TaskWork = () => {
-    const [count, setCount] = React.useState(0);
+    const [count, setCount] = useState(0);
     useEffect(() => {
         setTimeout(() => {
             setCount(() => (count + 1),)
