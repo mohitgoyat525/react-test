@@ -61,9 +61,9 @@ const ThreeCards = () => {
                   <div>
                       {CARD_DATA.map((value, i) => (
                           <div key={i} className='border border-solid border-white bg-[#CFEEFF] rounded-3xl w-full max-w-[365px] px-[30px] py-5'>
-                              <BluePeopleIcon />
-                              <CardHeading CardHeadings={value.heading} />
-                              <CardPara CardParaText={value.para} />
+                            <BluePeopleIcon />
+                            <CardHeading CardHeadings={value.heading} />
+                            <CardPara CardParaText={value.para} />
                           </div>
                       ))}
                   </div>

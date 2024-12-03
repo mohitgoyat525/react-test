@@ -12,9 +12,9 @@ const Hero = () => {
       <div
         className={`${
           location === "/"
-            ? "flex items-center justify-center bg-red-500 min-h-screen flex-col rounded-es-[33px] rounded-b-[33px]"
-            : "flex items-center justify-center bg-[#01A4FFBD] min-h-screen flex-col"
-        }`}
+          ? " bg-red-500 rounded-b-[33px]"
+            : " bg-[#01A4FFBD]"
+        } flex items-center justify-center min-h-screen flex-col`}
       >
         <CommonHeading
           HeroSectionHeading={
